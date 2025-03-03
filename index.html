@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chaitanya Patil - Portfolio (No Nav Bar)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Devicon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <!-- Typed.js (for dynamic text) -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+  <header>
+    <header class="header">
+      <nav class="navbar">
+        <!-- Hamburger Menu Icon -->
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- HERO SECTION -->
+  <section id="hero" class="hero">
+    <!-- Background Video -->
+    <video class="hero-video" autoplay muted loop>
+      <source src="videoplayback.mp4" type="video/mp4">
+      <!-- Fallback text if the browser doesn't support HTML5 video -->
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Hero Content -->
+    <div class="hero-content">
+      <img src="myprofile.jpeg" alt="Chaitanya Patil" class="profile-img">
+      <h1>Hi, I'm Chaitanya Patil</h1>
+      <p>I'm a <span id="typed-text"></span></p>
+
+      <!-- Social + Resume -->
+      <div class="action-row">
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/chaitanyapatil21/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/chatty21" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:cp4734@g.rit.edu">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        <a 
+          href="Chaitanya Patil Resume.pdf" 
+          download="Chaitanya_Patil_Resume.pdf" 
+          class="resume-btn"
+        >
+          <i class="fas fa-file-download"></i> Download Resume
+        </a>
+      </div>
+
+      <!-- Down Arrow -->
+      <a href="#about" class="down-arrow">&#8595;</a>
+    </div>
+  </section>
+
+ <!-- ABOUT SECTION -->
+<section id="about" class="about-section">
+  <div class="container about-container">
+    <h2>About</h2>
+    
+    <div class="about-content">
+      <!-- Image on the left (replace with your actual image path) -->
+      <div class="about-image">
+        <img src="coffeewithme.jpeg" alt="Chaitanya Patil">
+      </div>
+
+      <!-- Text on the right -->
+      <div class="about-text">
+        <h3>Data Analytics</h3>
+        <p>
+          Currently pursuing a master's program in Information Technology and Analytics at 
+          Rochester Institute of Technology (CGPA: 3.6/4). 
+          Skilled in data manipulation, machine learning, and web development, 
+          leveraging tools like Python, SQL, Tableau, and more.
+        </p>
+        
+
+        <p>
+          I have interned as a Full-Stack Web Developer, Data Science Intern, 
+          and Machine Learning Intern, where I built and launched innovative applications, 
+          architected scalable data pipelines, and customized ML implementations 
+          that significantly boosted project efficiency and data-driven decision-making.
+        </p>
+
+        <p>
+          I'm passionate about leveraging advanced technologies—such as 
+          logistic regression, Random Forest, Gradient Boosting, and neural networks—to 
+          solve real-world challenges. My experiences have equipped me with 
+          strong analytical, problem-solving, and collaboration skills, 
+          making me eager to contribute in roles that drive impactful innovation.
+        </p>
+
+        <div class="contact-details">
+          <!-- Left Column -->
+          <ul class="contact-left">
+            <li><strong>Phone:</strong> +1 (585)910-7221</li>
+            <li><strong>City:</strong> Rochester, New York</li>
+          </ul>
+        
+          <!-- Right Column -->
+          <ul class="contact-right">
+            <li><strong>Degree:</strong> MS – Information Technology and Analytics</li>
+            <li><strong>Email:</strong> cp4734@g.rit.edu</li>
+          </ul>
+        </div>
+
+        <p class="fun-fact">
+          <em>Fun Fact:</em> I believe a good cup of coffee fuels creativity—I never miss my morning brew, which 
+          kick-starts my day and inspires innovative solutions!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- EXPERIENCE SECTION -->
+ <section id="experience" class="experience-section">
+  <h2>Professional Experience</h2>
+  <div class="experience-timeline">
+    
+    <!-- Timeline Item 1 -->
+    <div class="experience-item" data-aos="fade-right">
+      <!-- Blue Circle Icon -->
+      <div class="experience-icon">
+        <i class="fas fa-briefcase"></i>
+      </div>
+      <!-- Date (positioned to the right of the center line) -->
+      <span class="experience-year right-date">12/2022 – 02/2023</span>
+      <!-- Content Box on the left side -->
+      <div class="experience-content left">
+        <h3>Full-Stack Web Developer Intern</h3>
+        <p><strong>Null Class, Mumbai</strong></p>
+        <ul>
+          <li>Developed three dynamic web applications using advanced JavaScript features for intuitive navigation and interactive data visualizations.</li>
+          <li>Improved team dynamics and workflows by implementing strategic action plans, boosting project integration efficiency by 30%.</li>
+          <li>Identified and solved critical productivity challenges, enhancing development process agility.</li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Timeline Item 2 -->
+    <div class="experience-item" data-aos="fade-left">
+      <div class="experience-icon2">
+        <i class="fas fa-briefcase"></i>
+      </div>
+      <span class="experience-year right-date2">09/2021 – 10/2021</span>
+      <div class="experience-content right">
+        <h3>Data Science Intern</h3>
+        <p><strong>Let’s Grow More, Mumbai</strong></p>
+        <ul>
+          <li>Developed and implemented scalable data pipelines using Python, enhancing real-time data processing and analytics by 40%.</li>
+          <li>Performed advanced data analysis and built predictive models that identified key business trends, streamlining executive decision-making.</li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Timeline Item 3 -->
+    <div class="experience-item" data-aos="fade-right">
+      <div class="experience-icon">
+        <i class="fas fa-briefcase"></i>
+      </div>
+      <span class="experience-year right-date">07/2021 – 082021</span>
+      <div class="experience-content left">
+        <h3>Machine Learning Intern</h3>
+        <p><strong>Dev Incepts, Mumbai</strong></p>
+        <ul>
+          <li>Customized machine learning implementations to drive autonomous decision-making, saving over 15 hours per week.</li>
+          <li>Constructed sophisticated machine learning models by combining logistic regression with ensemble classifiers, significantly enhancing model performance within two weeks.</li>
+        </ul>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+  <!-- EDUCATION SECTION -->
+<section id="education" class="education-section">
+  <h2>Education</h2>
+
+  <div class="timeline">
+
+    <!-- Timeline Item 1 (Left Side) -->
+    <div class="timeline-item" data-aos="fade-right">
+      <!-- The circle with the icon -->
+      <div class="timeline-icon">
+        <i class="fas fa-graduation-cap"></i>
+      </div>
+      <!-- The date on the right of the line -->
+      <span class="timeline-year right-date">2023 – Present</span>
+
+      <!-- Content Box on the left -->
+      <div class="timeline-content left">
+        <h3>Rochester Institute of Technology</h3>
+        <p><strong>MS – Information Technology and Analytics</strong></p>
+        <p><strong>Courses:</strong></p>
+        <ul>
+          <li>Foundation of Data Science</li>
+          <li>Database Design and implementations</li>
+          <li>Non-Relational Data Management</li>
+          <li>Visual Analytics</li>
+          <li>Data Warehousing</li>
+          <li>Foundation of Web Technologies-1</li>
+          <li>Capstone</li>
+        </ul>
+      </div>
+    </div> <!-- end timeline-item 1 -->
+
+
+    <!-- Timeline Item 2 (Right Side) -->
+    <div class="timeline-item" data-aos="fade-left">
+      <!-- The circle with the icon -->
+      <div class="timeline-icon2">
+        <i class="fas fa-graduation-cap"></i>
+      </div>
+      <!-- The date on the right of the line -->
+      <span class="timeline-year left-date">2018 – 2022</span>
+
+      <!-- Content Box on the right -->
+      <div class="timeline-content right">
+        <h3>Atharva College of Engineering - Mumbai University</h3>
+        <p><strong>BE - Information Technology</strong></p>
+        <p><strong>Courses:</strong></p>
+        <ul>
+          <li>Data Structures and Algorithms</li>
+          <li>Big Data Analytics</li>
+          <li>Database Management System</li>
+          <li>Cloud Computing</li>
+          <li>Operating Systems</li>
+          <li>Data Mining and Business Intelligence</li>
+          <li>Software Engineering with Project Management</li>
+        </ul>
+      </div>
+    </div> <!-- end timeline-item 2 -->
+
+  </div> <!-- end .timeline -->
+</section>
+
+
+ <!-- SKILLS SECTION -->
+<section id="skills" class="skills">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <!-- AOS JS is still included if you use it elsewhere -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
+      <!-- Programming Languages -->
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" alt="Java Logo">
+        <p>Java</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C++ Logo">
+        <p>C++</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" alt="Python Logo">
+        <p>Python</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" alt="Flask Logo">
+        <p>Flask</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://img.icons8.com/?size=100&id=SruJhzn0nnLl&format=png&color=000000" alt="Looker logo">
+        <p>Looker Studio</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNtG3sNJP-TjvG3OL5GP4t9NK-goDIHr8Y0XGHGYeC4UYPo6Pt-7Jp3ZKJXOGEq0a0M6Y&usqp=CAU" alt="Neo4j Logo">
+        <p>Neo4j</p>
+      </div>
+      <!-- Data Analysis Tools -->
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" alt="MySQL Logo">
+        <p>SQL (MySQL)</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" alt="Pandas Logo">
+        <p>Pandas</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://www.svgrepo.com/show/354427/tableau.svg" alt="Tableau Logo">
+        <p>Tableau</p>
+      </div>
+      <div class="skill-item">
+        <!-- Placeholder for Power BI -->
+        <img src="https://img.icons8.com/?size=100&id=qYfwpsRXEcpc&format=png&color=000000" alt="Power BI Logo">
+        <p>Power BI</p>
+      </div>
+      
+      <!-- Web Development Technologies -->
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" alt="HTML5 Logo">
+        <p>HTML5</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="CSS3 Logo">
+        <p>CSS3</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript Logo">
+        <p>JavaScript</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain-wordmark.svg" alt="Django Logo">
+        <p>Django</p>
+      </div>
+      
+      <!-- Cloud Platforms -->
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS Logo">
+        <p>AWS</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="Azure Logo">
+        <p>Azure</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original-wordmark.svg" alt="Google Cloud Logo">
+        <p>Google Cloud</p>
+      </div>
+      
+      <!-- Data Engineering Tools -->
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hadoop/hadoop-original.svg" alt="Apache Hadoop Logo">
+        <p>Apache Hadoop</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" alt="Git Logo">
+        <p>Git</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" alt="Docker Logo">
+        <p>Docker</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain-wordmark.svg" alt="Kubernetes Logo">
+        <p>Kubernetes</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+const skills = [
+  { name: "Java", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" },
+  { name: "C++", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" },
+  { name: "Python", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" },
+  { name: "Flask", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" },
+  { name: "SQL (MySQL)", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" },
+  { name: "Pandas", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" },
+  { name: "Tableau", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tableau/tableau-original.svg" },
+  { name: "Power BI", logo: "https://via.placeholder.com/80?text=PowerBI" },
+  { name: "HTML5", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" },
+  { name: "CSS3", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" },
+  { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },
+  { name: "Django", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain-wordmark.svg" },
+  { name: "AWS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
+  { name: "Azure", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" },
+  { name: "Google Cloud", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original-wordmark.svg" },
+  { name: "Apache Hadoop", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hadoop/hadoop-original.svg" },
+  { name: "Git", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" },
+  { name: "Docker", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" },
+  { name: "Kubernetes", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain-wordmark.svg" }
+];
+
+const skillsGrid = document.getElementById('skills-grid');
+
+skills.forEach((skill, index) => {
+  const skillItem = document.createElement('div');
+  skillItem.className = 'skill-item';
+  // AOS animation on the outer container
+  skillItem.setAttribute('data-aos', 'zoom-in');
+  skillItem.setAttribute('data-aos-delay', index * 100);
+
+  // Create an inner wrapper for drift animation
+  const innerWrapper = document.createElement('div');
+  innerWrapper.className = 'skill-item-inner';
+
+  const img = document.createElement('img');
+  img.src = skill.logo;
+  img.alt = `${skill.name} Logo`;
+
+  const label = document.createElement('p');
+  label.textContent = skill.name;
+
+  innerWrapper.appendChild(img);
+  innerWrapper.appendChild(label);
+  skillItem.appendChild(innerWrapper);
+
+  // Randomize drift animation on inner wrapper
+  const randomDuration = (Math.random() * 3 + 4).toFixed(2);
+  const randomDelay = (Math.random() * 2).toFixed(2);
+  innerWrapper.style.animationDuration = `${randomDuration}s`;
+  innerWrapper.style.animationDelay = `${randomDelay}s`;
+
+  skillsGrid.appendChild(skillItem);
+});
+</script>
+
+
+<!-- CERTIFICATIONS SECTION -->
+<section id="certifications" class="certifications">
+  <div class="container">
+    <h2>Certifications</h2>
+    <div class="cert-grid">
+      
+      <!-- Certification Card 1 -->
+      <div class="cert-card" data-aos="fade-up">
+        <div class="cert-card-content">
+          <img src="https://images.credly.com/size/680x680/images/40bee502-a5b3-4365-90e7-57eed5067594/image.png" alt="Python for Data Science" class="cert-img">
+          <h3>Python for Data Science and AI</h3>
+          <p><strong>Issued by:</strong> Coursera</p>
+          <p><strong>Issued on:</strong> April 2023</p>
+        </div>
+        <a href="https://www.coursera.org/credential" class="btn" target="_blank">See Credential</a>
+      </div>
+      
+      <!-- Certification Card 2 -->
+      <div class="cert-card" data-aos="fade-up">
+        <div class="cert-card-content">
+          <!-- Replace with actual image path if available -->
+          <img src="https://coursera-university-assets.s3.amazonaws.com/74/fa9028074941789429dfc1d1b71ddf/gc-logo-360x360.png" alt="Introduction to Cloud Identity Logo" class="cert-img">
+          <h3>Introduction to Cloud Identity</h3>
+          <p><strong>Issued by:</strong> Google Cloud – Minnesota</p>
+          <p><strong>Issued on:</strong> June 2021</p>
+        </div>
+        <a href="https://www.coursera.org/account/accomplishments/certificate/ZB6YMLWHVPP7" class="btn" target="_blank">See Credential</a>
+      </div>
+      
+      <div class="cert-card" data-aos="fade-up">
+        <div class="cert-card-content">
+          <!-- Replace 'ibm_logo.png' with your actual image path or a placeholder -->
+          <img src="https://images.credly.com/images/40bee502-a5b3-4365-90e7-57eed5067594/image.png" alt="IBM Certification Logo" class="cert-img">
+          
+          <h3>Python for Data Science, AI &amp; Development</h3>
+          <p><strong>Issued by:</strong> IBM</p>
+          <p><strong>Issued on:</strong> April 2023</p> 
+        </div>
+        <a 
+          href="https://www.coursera.org/account/accomplishments/certificate/E4AB7T5Q9HDH" 
+          class="btn" 
+          target="_blank">
+          See Credential
+        </a>
+      </div>
+      
+      
+    </div>
+  </div>
+</section>
+
+      
+
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="projects">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      
+      <!-- Project Card 1 -->
+      <div class="project-card" data-aos="fade-up">
+        <!-- Background image or thumbnail -->
+        <div 
+          class="project-thumb" 
+          style="background-image: url('stock1.png');"
+        ></div>
+        <!-- Overlay with details -->
+        <div class="project-overlay">
+          <h3>EV Stock Analysis</h3>
+          <p>
+            Developed a dynamic Flask web app to analyze and predict EV stock performance using LSTM models and interactive Plotly charts.
+          </p>
+          <a href="https://github.com/chatty21/EV-Stock-Analysis" class="btn">View Details</a>
+        </div>
+      </div>
+      
+      <!-- Project Card 2 -->
+      <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+        <div 
+          class="project-thumb" 
+          style="background-image: url('EPL.png');"
+        ></div>
+        <div class="project-overlay">
+          <h3>EPL Player Wage & Performance</h3>
+          <p>
+            Built an interactive Tableau dashboard analyzing wages & performance for 20 Premier League teams over 4 seasons.
+          </p>
+          <a href="#" class="btn">View Details</a>
+        </div>
+      </div>
+
+       <!-- Project Card 3 -->
+       <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+        <div 
+          class="project-thumb" 
+          style="background-image: url('chatbot.png');"
+        ></div>
+        <div class="project-overlay">
+          <h3>Kidney Disease Chatbot – AI-Powered Medical Assistant
+          </h3>
+          <p>
+            Developed an AI-powered chatbot that provides medical insights on kidney disease using Natural Language Processing (NLP).
+          </p>
+          <a href="https://github.com/chatty21/Chatbot-on-kidney-disease" class="btn">View Details</a>
+        </div>
+      </div>
+      
+      
+      <!-- Project 4 -->
+      <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="project-thumb" style="background-image: url('download.png');"></div>
+        <div class="project-overlay">
+          <h3>Telecom Churn Prediction</h3>
+          <p>
+            Designed and tuned churn prediction models based on cutting-edge machine learning methods involving Natural Language Processingwith Term Frequency-Inverse Document Frequency (TF-IDF) and word embedding on more than 50,000 review texts.
+          </p>
+          <a href="https://github.com/chatty21/Telecom-Churn-prediction" class="btn">View Details</a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+  <!-- CONTACT SECTION -->
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    
+    <!-- Left Side: Big Text, Info, etc. -->
+    <div class="contact-left">
+      <h1 class="big-heading">CONNECT<br> WITH<br> ME.</h1>
+      
+      <!-- Optional additional info -->
+      <div class="contact-info">
+        <p>Chaitanyapatil827@gmail.com</p>
+        <p>Rochester<br>New York, United States</p>
+      </div>
+    </div>
+    
+     <!-- Right Side: Contact Form -->
+     <div class="contact-right">
+      <form class="contact-form" action="https://formspree.io/f/xdkaygdd" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="_replyto" placeholder="jane@gmail.com" required>
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+        
+        <!-- Honeypot to reduce spam -->
+        <input type="text" name="_gotcha" style="display:none">
+        
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+    
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Chaitanya Patil | All Rights Reserved</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/chaitanyapatil21/" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Typed.js Initialization -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      new Typed('#typed-text', {
+        strings: [
+          'Data Analyst',
+          'Machine Learning Specialist',
+          'Full Stack Web Developer'
+        ],
+        typeSpeed: 50,
+        backSpeed: 25,
+        backDelay: 1000,
+        startDelay: 500,
+        loop: true
+      });
+    });
+  </script>
+
+<!--Education-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800, // animation duration in ms
+      once: true,    // animate only once
+    });
+  </script>
+  
+ <!-- Dynamic Skills Script -->
+<script src="skills.js"></script>
+
+
+
+</body>
+</html>
