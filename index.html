@@ -2,743 +2,681 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Chaitanya Patil - Portfolio</title>
+  <title>Chaitanya Patil — Data Engineer & Analyst</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome for Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
-
-  <!-- External CSS -->
-  <link rel="stylesheet" href="styles.css">
-
-  <!-- Devicon -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-
-  <!-- Typed.js (for dynamic text) -->
+  <meta name="description" content="Chaitanya Patil — Data Engineer & Analyst. MS @ RIT. Building pipelines, models & dashboards that move the needle.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-  <!-- AOS CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header>
-    <header class="header">
-      <nav class="navbar">
-        <!-- Hamburger Menu Icon -->
-        <div class="menu-toggle" id="mobile-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <!-- Navigation Links -->
-        <ul class="nav-links">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  
-  <!-- HERO SECTION -->
-  <section id="hero" class="hero">
-    <!-- Background Video -->
-    <video class="hero-video" autoplay muted loop>
-      <source src="videoplayback.mp4" type="video/mp4">
-      <!-- Fallback text if the browser doesn't support HTML5 video -->
-      Your browser does not support the video tag.
-    </video>
+<body data-scene="hero">
 
-    <!-- Hero Content -->
-    <div class="hero-content">
-      <img src="myprofile.jpeg" alt="Chaitanya Patil" class="profile-img">
-      <h1>Hi, I'm Chaitanya Patil</h1>
-      <p>I'm a <span id="typed-text"></span></p>
+<!-- SCROLL PROGRESS -->
+<div id="scroll-progress"></div>
 
-      <!-- Social + Resume -->
-      <div class="action-row">
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/chaitanyapatil21/" target="_blank">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://github.com/chatty21" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="mailto:cp4734@g.rit.edu">
-            <i class="fas fa-envelope"></i>
-          </a>
-        </div>
-        <a 
-          href="Chaitanya-Patil-Resume.pdf" 
-          download="Chaitanya_Patil_Resume.pdf" 
-          class="resume-btn"
-        >
-          <i class="fas fa-file-download"></i> Download Resume
-        </a>
-      </div>
+<!-- CUSTOM CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursor-follower"></div>
 
-      <!-- Down Arrow -->
-      <a href="#about" class="down-arrow">&#8595;</a>
-    </div>
-  </section>
-
- <!-- ABOUT SECTION -->
-<section id="about" class="about-section">
-  <div class="container about-container">
-    <h2>About</h2>
-    
-    <div class="about-content">
-      <!-- Image on the left (replace with your actual image path) -->
-      <div class="about-image">
-        <img src="coffeewithme.jpeg" alt="Chaitanya Patil">
-      </div>
-
-      <!-- Text on the right -->
-      <div class="about-text">
-        <h3>Data Analytics</h3>
-        <p>
-          Currently pursuing a master's program in Information Technology and Analytics at 
-          Rochester Institute of Technology (CGPA: 3.6/4). 
-          Skilled in data manipulation, machine learning, and web development, 
-          leveraging tools like Python, SQL, Tableau, and more.
-        </p>
-        
-
-       <p>
-          Data Analyst / Data Engineer with 2+ years turning multi-source data into decision-ready insights.
-          At CrowdDoing, built Python/SQL ETL that converted 226 indicators into a Power BI dashboard and an auto-generated two-page brief in under 48 hours, cutting manual work by 70%.
-          At Dev Incepts, delivered ML pipelines for lead scoring, enrollment forecasting, and churn risk with monitoring and drift checks—improving data quality by 40%, reducing outages by 18%, and accelerating pricing/capacity decisions by 30%.
-          As a Data Analyst Intern at Let’s Grow More, automated SQL/Excel/ETL with embedded anomaly checks, boosting reliability by 40%, cutting manual prep by 35%, and enabling near-real-time detection via Kafka prototypes.
-      </p>
-
-        <p>
-          I'm passionate about leveraging advanced technologies—such as 
-          logistic regression, Random Forest, Gradient Boosting, and neural networks—to 
-          solve real-world challenges. My experiences have equipped me with 
-          strong analytical, problem-solving, and collaboration skills, 
-          making me eager to contribute in roles that drive impactful innovation.
-        </p>
-
-        <div class="contact-details">
-          <!-- Left Column -->
-          <ul class="contact-left">
-            <li><strong>Phone:</strong> +1 (585)910-7221</li>
-            <li><strong>City:</strong> Rochester, New York</li>
-          </ul>
-        
-          <!-- Right Column -->
-          <ul class="contact-right">
-            <li><strong>Degree:</strong> MS – Information Technology and Analytics</li>
-            <li><strong>Email:</strong> cp4734@g.rit.edu</li>
-          </ul>
-        </div>
-
-        <p class="fun-fact">
-          <em>Fun Fact:</em> I believe a good cup of coffee fuels creativity—I never miss my morning brew, which 
-          kick-starts my day and inspires innovative solutions!
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PROJECTS SECTION -->
-<section id="projects" class="projects">
-  <div class="container">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      
-      <!-- Project Card 1 -->
-      <div class="project-card" data-aos="fade-up">
-        <!-- Background image or thumbnail -->
-        <div 
-          class="project-thumb" 
-          style="background-image: url('stock1.png');"
-        ></div>
-        <!-- Overlay with details -->
-        <div class="project-overlay">
-          <h3>EV Stock Analysis</h3>
-          <p>
-            Developed a dynamic Flask web app to analyze and predict EV stock performance using LSTM models and interactive Plotly charts.
-          </p>
-          <a href="https://ev-stock-analysis.onrender.com/" class="btn">View Details</a>
-        </div>
-      </div>
-      
-      <!-- Project Card 2 -->
-      <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-        <div 
-          class="project-thumb" 
-          style="background-image: url('EPL.png');" 
-        ></div>
-        <div class="project-overlay">
-          <h3>EPL Player Wage & Performance</h3>
-          <p>
-            Built an interactive Tableau dashboard analyzing wages & performance for 20 Premier League teams over 4 seasons.
-          </p>
-          <a href="https://big-wages-big-impact.netlify.app/" class="btn">View Details</a>
-        </div>
-      </div>
-
-       <!-- Project Card 3 -->
-       <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-        <div 
-          class="project-thumb" 
-          style="background-image: url('chatbot.png');"
-        ></div>
-        <div class="project-overlay">
-          <h3>Kidney Disease Chatbot – AI-Powered Medical Assistant
-          </h3>
-          <p>
-            Developed an AI-powered chatbot that provides medical insights on kidney disease using Natural Language Processing (NLP).
-          </p>
-          <a href="https://github.com/chatty21/Chatbot-on-kidney-disease" class="btn">View Details</a>
-        </div>
-      </div>
-      
-      
-      <!-- Project 4 -->
-      <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-        <div class="project-thumb" style="background-image: url('download.png');"></div>
-        <div class="project-overlay">
-          <h3>Telecom Churn Prediction</h3>
-          <p>
-            Designed and tuned churn prediction models based on cutting-edge machine learning methods involving Natural Language Processingwith Term Frequency-Inverse Document Frequency (TF-IDF) and word embedding on more than 50,000 review texts.
-          </p>
-          <a href="https://github.com/chatty21/Telecom-Churn-prediction" class="btn">View Details</a>
-        </div>
-      </div>
-
-  <!-- Project Card 5: LLM-Powered Data Risk Auditor -->
-  <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-    <div class="project-thumb" style="background-image: url('LLAMA.png');"></div>
-    <div class="project-overlay">
-      <h3>LLM-Powered Data Risk Auditor</h3>
-      <p>
-        Built an LLaMA 2-based tool to detect data risks and generate Streamlit dashboards.
-      </p>
-      <a href="https://llm-powered-data-risk-auditor.streamlit.app/" class="btn">View Details</a>
-    </div>
-  </div>
-
-<!-- Project Card 6: Solar Forecasting -->
-<div class="project-card" data-aos="fade-up" data-aos-delay="300">
-  <div class="project-thumb" style="background-image: url('SOLAR.png');"></div>
-  <div class="project-overlay">
-    <h3>Solar Forecasting Using ARIMA</h3>
-    <p>
-      Analyzed and forecasted solar energy generation trends using ARIMA models. Covered top global contributors and visualized real vs predicted generation using RMSE evaluation.
-    </p>
-    <a href="https://github.com/chatty21/solar-forecasting" class="btn">View Details</a>
+<!-- LOADER -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <div class="loader-logo">CP</div>
+    <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+    <p class="loader-text">Loading portfolio...</p>
   </div>
 </div>
 
-<!-- Project Card 7 -->
-<div class="project-card" data-aos="fade-up" data-aos-delay="500">
-  <div 
-    class="project-thumb" 
-    style="background-image: url('instacart.png');"
-  ></div>
-  <div class="project-overlay">
-    <h3>Instacart Analytics Dashboard</h3>
-    <p>
-      Built an end-to-end analytics dashboard to explore customer behavior, segmentation, and demand forecasting using the Instacart dataset. Includes RFM analysis, A/B testing simulation, recommender systems, and time series forecasting.
-    </p>
-    <a href="https://github.com/chatty21/instacart-analytics-dashboard" class="btn">View Details</a>
-  </div>
-</div>
-
-<!-- Project Card 7 -->
-<div class="project-card" data-aos="fade-up" data-aos-delay="600">
-  <div 
-    class="project-thumb" 
-    style="background-image: url('fraud.png');"
-  ></div>
-  <div class="project-overlay">
-    <h3>Fraud Detection API</h3>
-    <p>
-      Developed a machine learning-powered fraud detection system with a robust FastAPI backend. Supports real-time transaction scoring, model retraining, and Streamlit-based visualization for anomaly insights.
-    </p>
-    <a href="https://github.com/chatty21/fraud-detection-api?tab=readme-ov-file" class="btn">View Details</a>
-  </div>
-</div>
-
-
-    </div>
-  </div>
-</section>
-
- <!-- EXPERIENCE SECTION -->
- <section id="experience" class="experience-section">
-  <h2>Professional Experience</h2>
-  <div class="experience-timeline">
-    
-    <!-- Timeline Item 1 -->
-    <div class="experience-item" data-aos="fade-right">
-      <!-- Blue Circle Icon -->
-      <div class="experience-icon">
-        <i class="fas fa-briefcase"></i>
-      </div>
-      <!-- Date (positioned to the right of the center line) -->
-      <span class="experience-year right-date">12/2020 – 02/2021</span>
-      <!-- Content Box on the left side -->
-      <div class="experience-content left">
-        <h3>Full-Stack Web Developer Intern</h3>
-        <p><strong>Null Class, Mumbai</strong></p>
-        <ul>
-          <li>Developed three dynamic web applications using advanced JavaScript features for intuitive navigation and interactive data visualizations.</li>
-          <li>Improved team dynamics and workflows by implementing strategic action plans, boosting project integration efficiency by 30%.</li>
-          <li>Identified and solved critical productivity challenges, enhancing development process agility.</li>
-        </ul>
-      </div>
-    </div>
-    
-    <!-- Timeline Item 2 -->
-    <div class="experience-item" data-aos="fade-left">
-      <div class="experience-icon2">
-        <i class="fas fa-briefcase"></i>
-      </div>
-      <span class="experience-year right-date2">12/2021 – 06/2022</span>
-      <div class="experience-content right">
-        <h3>Data Analytics Intern</h3>
-        <p><strong>Let’s Grow More, Mumbai</strong></p>
-        <ul>
-          <li>Designed and optimized full-stack data pipelines using Python and Pandas, improving internal data processing speed and reliability by 40% across varied analytics workflows.</li>
-          <li>Automated complex ETL routines across Excel and SQL, reducing manual preparation time by 35% while boosting data accuracy.</li>
-          <li>Delivered 10+ Matplotlib and Seaborn visualizations that shaped 5+ strategic decisions across product planning efforts.</li>
-        </ul>
-      </div>
-    </div>
-
-<!-- Timeline Item 3 --> <div class="experience-item" data-aos="fade-right"> <div class="experience-icon"> <i class="fas fa-briefcase"></i> </div> <span class="experience-year right-date">07/2022 – 07/2023</span> <div class="experience-content left"> <h3>Data Engineer</h3> <p><strong>Dev Incepts, Mumbai</strong></p> <ul> <li>Architected predictive maintenance pipelines leveraging Random Forest and Gradient Boosting, enhancing fault forecast accuracy by 18% and reducing downtime risk across weekly ops cycles.</li> <li>Automated data cleaning, training, and testing steps, saving the analytics team 15+ hours of manual work each week.</li> <li>Enhanced model performance via hyperparameter tuning with GridSearchCV, increasing precision by 12%.</li> </ul> </div> </div>
-    
-<!-- Timeline Item: CrowdDoing -->
-<div class="experience-item" data-aos="fade-left">
-  <div class="experience-icon2">
-    <i class="fas fa-briefcase"></i>
-  </div>
-  <span class="experience-year right-date2">09/2025 – Present</span>
-  <div class="experience-content right">
-    <h3>Data Engineer (Volunteer)</h3>
-    <p><strong>CrowdDoing (Wildfire Prevention), Remote</strong></p>
-    <ul>
-      <li>Built Python/SQL ETL to convert 226+ county indicators into a Power BI dashboard and auto-generated 2-page briefs in &lt;48 hours, cutting manual synthesis by ~70%.</li>
-      <li>Standardized schemas, data dictionary, and validation checks to streamline multi-source ingestion (census, weather, risk indices) and improve data quality.</li>
-      <li>Delivered decision-ready county profiles for CWPP/grant proposals, helping prioritize high-risk areas and speed stakeholder reporting.</li>
+<!-- ══ NAV ══ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo"><span class="bracket">&lt;</span>CP<span class="bracket">/&gt;</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about"        class="nav-link">About</a></li>
+      <li><a href="#experience"   class="nav-link">Experience</a></li>
+      <li><a href="#projects"     class="nav-link">Projects</a></li>
+      <li><a href="#skills"       class="nav-link">Skills</a></li>
+      <li><a href="#education"    class="nav-link">Education</a></li>
+      <li><a href="#certifications" class="nav-link">Certs</a></li>
+      <li><a href="#contact"      class="nav-link nav-cta">Let's Talk</a></li>
     </ul>
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section id="hero" class="hero">
+  <canvas id="heroCanvas" class="hero-canvas"></canvas>
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="videoplayback.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="hero-grid-lines" aria-hidden="true"></div>
+  <div class="hero-aurora" aria-hidden="true">
+    <span class="aurora aurora-a"></span>
+    <span class="aurora aurora-b"></span>
+    <span class="aurora aurora-c"></span>
+  </div>
+  <div class="hero-spotlight" id="heroSpotlight" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <div class="hero-grid">
+      <div class="hero-main">
+        <div class="hero-eyebrow" data-aos="fade-down" data-aos-duration="700">
+          <span class="live-dot"></span>Open to Data Analyst, Data Engineer & Business Analyst roles &nbsp;·&nbsp; Rochester, NY
+        </div>
+
+        <p class="hero-kicker" data-aos="fade-up" data-aos-delay="120">Data Analyst · Data Engineer · Business Analyst</p>
+        <h1 class="hero-name" data-aos="fade-up" data-aos-delay="180">
+          Turning <span>data into decisions</span> with cleaner pipelines, sharper dashboards, and business-ready insight.
+        </h1>
+        <p class="hero-sub hero-lead" data-aos="fade-up" data-aos-delay="240">
+          I'm Chaitanya Patil. I build analyst-friendly data products that help teams measure what matters, automate reporting, and act faster with <span id="typed-text"></span>
+        </p>
+
+        <div class="hero-role-pills" data-aos="fade-up" data-aos-delay="280">
+          <span>Dashboards & KPI Reporting</span>
+          <span>ETL & Data Pipelines</span>
+          <span>Forecasting & Predictive Models</span>
+          <span>Stakeholder-Focused Analysis</span>
+        </div>
+
+        <div class="hero-ctas" data-aos="fade-up" data-aos-delay="320">
+          <a href="Chaitanya-Patil-Resume.pdf" download class="btn-primary" data-magnetic>
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+          <a href="#projects" class="btn-outline" data-magnetic>
+            Explore Projects <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="hero-socials" data-aos="fade-up" data-aos-delay="380">
+          <a href="https://www.linkedin.com/in/chaitanyapatil21/" target="_blank" class="soc-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/chatty21"                   target="_blank" class="soc-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:Chaitanyapatil827@gmail.com"                            class="soc-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+
+        <div class="hero-mini-proof" data-aos="fade-up" data-aos-delay="420">
+          <div class="hero-proof-card">
+            <span class="proof-label">Recent Impact</span>
+            <strong>226+ wildfire indicators turned into briefing-ready intelligence.</strong>
+          </div>
+          <div class="hero-proof-card">
+            <span class="proof-label">What Teams Get</span>
+            <strong>Cleaner reporting, faster decisions, and analytics built for real business use.</strong>
+          </div>
+        </div>
+
+        <div class="hero-value-strip" data-aos="fade-up" data-aos-delay="500">
+          <div class="hero-value-card">
+            <small>Tools</small>
+            <strong>Python · SQL · Power BI · Tableau</strong>
+          </div>
+          <div class="hero-value-card">
+            <small>Strength</small>
+            <strong>Bridging technical data work with stakeholder clarity</strong>
+          </div>
+        </div>
+
+        <div class="hero-stats" data-aos="fade-up" data-aos-delay="460">
+          <div class="hs"><span class="hs-num" data-count="2">0</span><sup>+</sup><small>Years Exp</small></div>
+          <div class="hs-div"></div>
+          <div class="hs"><span class="hs-num" data-count="70">0</span><sup>%</sup><small>Manual Work Cut</small></div>
+          <div class="hs-div"></div>
+          <div class="hs"><span class="hs-num" data-count="8">0</span><sup>+</sup><small>Projects Built</small></div>
+          <div class="hs-div"></div>
+          <div class="hs"><span class="hs-num" data-count="226">0</span><sup>+</sup><small>Indicators Processed</small></div>
+        </div>
+      </div>
+
+      <aside class="hero-panel" data-aos="fade-left" data-aos-delay="220">
+        <div class="hero-panel-top">
+          <span class="panel-badge">Selected Snapshot</span>
+          <p class="panel-location">Rochester, New York</p>
+        </div>
+
+        <div class="hero-panel-card hero-panel-quote">
+          <p>I like data work that looks clean on the surface and does serious heavy lifting underneath.</p>
+        </div>
+
+        <div class="hero-panel-grid">
+          <div class="hero-panel-card metric-card">
+            <span class="panel-label">Manual Work Reduced</span>
+            <strong>70%</strong>
+          </div>
+          <div class="hero-panel-card metric-card">
+            <span class="panel-label">Projects Built</span>
+            <strong>8+</strong>
+          </div>
+        </div>
+
+        <div class="hero-signal-card">
+          <div class="signal-head">
+            <span class="signal-dot"></span>
+            <span>Currently Focused On</span>
+          </div>
+          <ul class="signal-list">
+            <li>Data engineering pipelines with cleaner schema design, automation, and reliable reporting flows.</li>
+            <li>Analytical products that help stakeholders understand trends, KPIs, and business risk faster.</li>
+            <li>Machine learning and forecasting work that supports planning, operations, and smarter decisions.</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue">
+    <span>Scroll</span>
+    <div class="scroll-rail"><div class="scroll-puck"></div></div>
+  </a>
+</section>
+
+<!-- ══ MARQUEE ══ -->
+<div class="marquee-strip" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Python</span><em>·</em><span>ETL Pipelines</span><em>·</em><span>Power BI</span><em>·</em>
+    <span>Machine Learning</span><em>·</em><span>SQL</span><em>·</em><span>Data Engineering</span><em>·</em>
+    <span>Tableau</span><em>·</em><span>AWS</span><em>·</em><span>Docker</span><em>·</em>
+    <span>Kafka</span><em>·</em><span>FastAPI</span><em>·</em><span>LSTM</span><em>·</em>
+    <span>LLaMA 2</span><em>·</em><span>Random Forest</span><em>·</em><span>Gradient Boosting</span><em>·</em>
+    <span>Python</span><em>·</em><span>ETL Pipelines</span><em>·</em><span>Power BI</span><em>·</em>
+    <span>Machine Learning</span><em>·</em><span>SQL</span><em>·</em><span>Data Engineering</span><em>·</em>
+    <span>Tableau</span><em>·</em><span>AWS</span><em>·</em><span>Docker</span><em>·</em>
+    <span>Kafka</span><em>·</em><span>FastAPI</span><em>·</em><span>LSTM</span><em>·</em>
+    <span>LLaMA 2</span><em>·</em><span>Random Forest</span><em>·</em><span>Gradient Boosting</span><em>·</em>
   </div>
 </div>
 
+<!-- ══ ABOUT ══ -->
+<section id="about" class="section about-section" data-scene="about">
+  <div class="container">
+    <div class="sec-label" data-aos="fade-right"><span class="sec-num">01</span><span class="sec-txt">About Me</span></div>
+    <div class="about-grid">
+      <div class="about-left" data-aos="fade-right" data-aos-delay="100">
+        <div class="about-img-wrap">
+          <img src="coffeewithme.jpeg" alt="Chaitanya" class="about-img">
+          <div class="about-img-badge">
+            <i class="fas fa-graduation-cap"></i>
+            <div><strong>MS @ RIT</strong><span>GPA 3.6 / 4.0</span></div>
+          </div>
+        </div>
+        <div class="about-pills">
+          <a href="tel:+15859107221"                                        class="a-pill"><i class="fas fa-phone"></i><span>+1 (585) 910-7221</span></a>
+          <a href="mailto:cp4734@g.rit.edu"                                 class="a-pill"><i class="fas fa-envelope"></i><span>cp4734@g.rit.edu</span></a>
+          <a href="https://www.linkedin.com/in/chaitanyapatil21/" target="_blank" class="a-pill"><i class="fab fa-linkedin"></i><span>chaitanyapatil21</span></a>
+          <a href="https://github.com/chatty21"                  target="_blank" class="a-pill"><i class="fab fa-github"></i><span>chatty21</span></a>
+        </div>
+      </div>
 
-
-    
+      <div class="about-right" data-aos="fade-left" data-aos-delay="150">
+        <h2 class="about-title">Data storyteller.<br>Pipeline architect.<br>Results-obsessed.</h2>
+        <div class="about-body">
+          <p>I'm a <strong>Data Engineer & Analyst</strong> with 2+ years of turning messy, multi-source data into decision-ready insights. Currently finishing my MS in Information Technology & Analytics at <strong>Rochester Institute of Technology</strong>.</p>
+          <p>At <strong>CrowdDoing</strong>, I built a Python/SQL ETL that converted 226+ county wildfire indicators into a live Power BI dashboard and auto-generated briefings in under 48 hours — cutting manual synthesis by <span class="stat-inline">~70%</span>.</p>
+          <p>At <strong>Dev Incepts</strong>, I shipped ML pipelines for lead scoring, enrollment forecasting, and churn risk — improving data quality by <span class="stat-inline">40%</span>, reducing outages by <span class="stat-inline">18%</span>, and accelerating decisions by <span class="stat-inline">30%</span>.</p>
+          <p>Passionate about logistic regression, Random Forest, Gradient Boosting, LSTMs, and neural networks applied where they actually matter.</p>
+        </div>
+        <div class="about-skill-pills">
+          <span>Python</span><span>SQL</span><span>Power BI</span><span>Tableau</span>
+          <span>AWS</span><span>Docker</span><span>FastAPI</span><span>LLMs</span>
+        </div>
+        <p class="fun-fact"><i class="fas fa-mug-hot"></i> Coffee first, pipeline second — every great insight starts with a morning brew.</p>
+      </div>
+    </div>
   </div>
 </section>
 
-  <!-- EDUCATION SECTION -->
-<section id="education" class="education-section">
-  <h2>Education</h2>
+<!-- ══ EXPERIENCE ══ -->
+<section id="experience" class="section exp-section" data-scene="experience">
+  <div class="container">
+    <div class="sec-label" data-aos="fade-right"><span class="sec-num">02</span><span class="sec-txt">Experience</span></div>
+    <h2 class="sec-title" data-aos="fade-up">Where I've done the work.</h2>
+    <div class="exp-list">
 
-  <div class="timeline">
-
-    <!-- Timeline Item 1 (Left Side) -->
-    <div class="timeline-item" data-aos="fade-right">
-      <!-- The circle with the icon -->
-      <div class="timeline-icon">
-        <i class="fas fa-graduation-cap"></i>
+      <div class="exp-card" data-aos="fade-up">
+        <div class="exp-left">
+          <div class="exp-icon accent-icon"><i class="fas fa-fire-flame-curved"></i></div>
+          <div class="exp-vline"></div>
+        </div>
+        <div class="exp-right">
+          <div class="exp-hdr">
+            <div><h3>Data Engineer <span>@ CrowdDoing</span></h3><p class="exp-co">Wildfire Prevention · Remote · Volunteer</p></div>
+            <span class="exp-badge">Sep 2025 – Present</span>
+          </div>
+          <ul class="exp-bul">
+            <li>Built Python/SQL ETL converting <strong>226+ county indicators</strong> into Power BI dashboard & auto-generated 2-page briefs in &lt;48 hrs — cutting manual work by <strong>~70%</strong></li>
+            <li>Standardized schemas, data dictionary & validation checks for multi-source ingestion (census, weather, risk indices)</li>
+            <li>Delivered county profiles for CWPP/grant proposals, prioritizing high-risk wildfire zones for stakeholders</li>
+          </ul>
+          <div class="exp-stack"><span>Python</span><span>SQL</span><span>Power BI</span><span>ETL</span></div>
+        </div>
       </div>
-      <!-- The date on the right of the line -->
-      <span class="timeline-year right-date">2023 – 2025</span>
 
-      <!-- Content Box on the left -->
-      <div class="timeline-content left">
+      <div class="exp-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="exp-left">
+          <div class="exp-icon"><i class="fas fa-database"></i></div>
+          <div class="exp-vline"></div>
+        </div>
+        <div class="exp-right">
+          <div class="exp-hdr">
+            <div><h3>Data Engineer <span>@ Dev Incepts</span></h3><p class="exp-co">Mumbai · Full-time</p></div>
+            <span class="exp-badge">Jul 2022 – Jul 2023</span>
+          </div>
+          <ul class="exp-bul">
+            <li>Architected predictive maintenance pipelines using <strong>Random Forest & Gradient Boosting</strong> — improved fault accuracy by <strong>18%</strong></li>
+            <li>Automated data cleaning, training & testing — saved <strong>15+ hrs/week</strong> of manual work</li>
+            <li>Boosted model precision by <strong>12%</strong> via hyperparameter tuning with GridSearchCV</li>
+          </ul>
+          <div class="exp-stack"><span>Python</span><span>Scikit-learn</span><span>GridSearchCV</span><span>ML Pipelines</span></div>
+        </div>
+      </div>
+
+      <div class="exp-card" data-aos="fade-up" data-aos-delay="140">
+        <div class="exp-left">
+          <div class="exp-icon"><i class="fas fa-chart-line"></i></div>
+          <div class="exp-vline"></div>
+        </div>
+        <div class="exp-right">
+          <div class="exp-hdr">
+            <div><h3>Data Analytics Intern <span>@ Let's Grow More</span></h3><p class="exp-co">Mumbai · Internship</p></div>
+            <span class="exp-badge">Dec 2021 – Jun 2022</span>
+          </div>
+          <ul class="exp-bul">
+            <li>Built Python/Pandas pipelines improving processing speed & reliability by <strong>40%</strong></li>
+            <li>Automated ETL across Excel & SQL, reducing manual prep by <strong>35%</strong></li>
+            <li>Delivered <strong>10+ visualizations</strong> (Matplotlib/Seaborn) shaping 5+ strategic product decisions</li>
+          </ul>
+          <div class="exp-stack"><span>Python</span><span>Pandas</span><span>SQL</span><span>Seaborn</span></div>
+        </div>
+      </div>
+
+      <div class="exp-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="exp-left">
+          <div class="exp-icon"><i class="fas fa-code"></i></div>
+        </div>
+        <div class="exp-right">
+          <div class="exp-hdr">
+            <div><h3>Full-Stack Developer Intern <span>@ Null Class</span></h3><p class="exp-co">Mumbai · Internship</p></div>
+            <span class="exp-badge">Dec 2020 – Feb 2021</span>
+          </div>
+          <ul class="exp-bul">
+            <li>Built three dynamic web apps with advanced JavaScript, intuitive navigation & interactive visualizations</li>
+            <li>Boosted project integration efficiency by <strong>30%</strong> through strategic workflow improvements</li>
+          </ul>
+          <div class="exp-stack"><span>JavaScript</span><span>HTML/CSS</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROJECTS ══ -->
+<section id="projects" class="section projects-section" data-scene="projects">
+  <div class="container">
+    <div class="sec-label" data-aos="fade-right"><span class="sec-num">03</span><span class="sec-txt">Projects</span></div>
+    <h2 class="sec-title" data-aos="fade-up">Things I've built.</h2>
+    <div class="projects-shell">
+      <aside class="projects-story" id="projectsStory" data-aos="fade-right">
+        <span class="projects-story-label">Active Build</span>
+        <div class="projects-story-display">
+          <span class="projects-story-year" id="projectsStoryYear">2024</span>
+          <h3 id="projectsStoryTitle">LLM-Powered Data Risk Auditor</h3>
+          <p id="projectsStoryText">Built a LLaMA 2-based tool to detect data risks and auto-generate Streamlit dashboards. Combines large language model reasoning with actionable BI output for enterprise risk workflows.</p>
+        </div>
+        <div class="projects-story-tags" id="projectsStoryTags">
+          <span>LLaMA 2</span><span>Streamlit</span><span>NLP</span><span>Python</span>
+        </div>
+      </aside>
+
+      <div class="proj-grid">
+
+      <div class="proj-card proj-featured is-active" data-aos="fade-up">
+        <div class="proj-thumb" style="background-image:url('LLAMA.png')">
+          <div class="proj-overlay"><a href="https://llm-powered-data-risk-auditor.streamlit.app/" target="_blank" class="proj-view-btn"><i class="fas fa-external-link-alt"></i> View Live</a></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-top"><span class="proj-badge star-badge">★ Featured</span><span class="proj-yr">2024</span></div>
+          <h3>LLM-Powered Data Risk Auditor</h3>
+          <p>Built a LLaMA 2-based tool to detect data risks and auto-generate Streamlit dashboards. Combines large language model reasoning with actionable BI output for enterprise risk workflows.</p>
+          <div class="proj-tags"><span>LLaMA 2</span><span>Streamlit</span><span>NLP</span><span>Python</span></div>
+          <a href="https://llm-powered-data-risk-auditor.streamlit.app/" target="_blank" class="proj-cta primary-cta"><i class="fas fa-rocket"></i> Live Demo</a>
+        </div>
+      </div>
+
+      <div class="proj-card" data-aos="fade-up" data-aos-delay="60">
+        <div class="proj-thumb" style="background-image:url('Screenshot 2026-03-31 at 7.14.03 PM.png')">
+          <div class="proj-overlay"><a href="https://sentiment-x-zeta.vercel.app/" target="_blank" class="proj-view-btn"><i class="fas fa-external-link-alt"></i> View Live</a></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-top"><span class="proj-badge">Sentiment · Markets</span><span class="proj-yr">2025</span></div>
+          <h3>SentimentX</h3>
+          <p>Market sentiment intelligence app built with Next.js to surface stock signals, news-driven sentiment shifts, and interactive indicator views in a cleaner research workflow.</p>
+          <div class="proj-tags"><span>Next.js</span><span>TypeScript</span><span>Supabase</span></div>
+          <a href="https://github.com/chatty21/SentimentX" target="_blank" class="proj-cta"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+
+      <div class="proj-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="proj-thumb" style="background-image:url('fraud.png')">
+          <div class="proj-overlay"><a href="https://github.com/chatty21/fraud-detection-api" target="_blank" class="proj-view-btn"><i class="fab fa-github"></i> View Repo</a></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-top"><span class="proj-badge">ML · API</span><span class="proj-yr">2024</span></div>
+          <h3>Fraud Detection API</h3>
+          <p>ML-powered fraud detection with FastAPI backend. Real-time scoring, model retraining & anomaly visualization.</p>
+          <div class="proj-tags"><span>FastAPI</span><span>ML</span><span>Streamlit</span></div>
+          <a href="https://github.com/chatty21/fraud-detection-api" target="_blank" class="proj-cta"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+
+      <div class="proj-card" data-aos="fade-up" data-aos-delay="140">
+        <div class="proj-thumb" style="background-image:url('stock1.png')">
+          <div class="proj-overlay"><a href="https://ev-stock-analysis.onrender.com/" target="_blank" class="proj-view-btn"><i class="fas fa-external-link-alt"></i> View Live</a></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-top"><span class="proj-badge">Finance · AI</span><span class="proj-yr">2024</span></div>
+          <h3>EV Stock Analysis</h3>
+          <p>Flask web app analyzing & predicting EV stock performance with LSTM models and interactive Plotly charts.</p>
+          <div class="proj-tags"><span>Flask</span><span>LSTM</span><span>Plotly</span></div>
+          <a href="https://ev-stock-analysis.onrender.com/" target="_blank" class="proj-cta"><i class="fas fa-rocket"></i> Live</a>
+        </div>
+      </div>
+
+      <div class="proj-card" data-aos="fade-up" data-aos-delay="180">
+        <div class="proj-thumb" style="background-image:url('Screenshot 2026-03-31 at 5.32.34 PM.png')">
+          <div class="proj-overlay"><a href="https://big-wages-big-impact.netlify.app/" target="_blank" class="proj-view-btn"><i class="fas fa-external-link-alt"></i> View Live</a></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-top"><span class="proj-badge">BI · Sports</span><span class="proj-yr">2023</span></div>
+          <h3>EPL Wage & Performance</h3>
+          <p>Interactive Tableau dashboard analyzing wages & performance for all 20 Premier League clubs across 4 seasons.</p>
+          <div class="proj-tags"><span>Tableau</span><span>Sports Analytics</span></div>
+          <a href="https://big-wages-big-impact.netlify.app/" target="_blank" class="proj-cta"><i class="fas fa-rocket"></i> Live</a>
+        </div>
+      </div>
+
+      <div class="proj-card" data-aos="fade-up" data-aos-delay="220">
+        <div class="proj-thumb" style="background-image:url('Screenshot 2026-03-31 at 5.24.43 PM 2.png')">
+          <div class="proj-overlay"><a href="https://worldcupanalytics.vercel.app/" target="_blank" class="proj-view-btn"><i class="fas fa-external-link-alt"></i> View Live</a></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-top"><span class="proj-badge">Sports · Analytics</span><span class="proj-yr">2025</span></div>
+          <h3>World Cup Analytics</h3>
+          <p>Interactive analytics experience exploring FIFA World Cup team and player performance through cleaner visuals, comparative metrics, and match-level insights for faster sports analysis.</p>
+          <div class="proj-tags"><span>Analytics</span><span>Visualization</span><span>Sports Data</span></div>
+          <a href="https://worldcupanalytics.vercel.app/" target="_blank" class="proj-cta"><i class="fas fa-rocket"></i> Live</a>
+        </div>
+      </div>
+
+      <div class="proj-card" data-aos="fade-up" data-aos-delay="260">
+        <div class="proj-thumb" style="background-image:url('instacart.png')">
+          <div class="proj-overlay"><a href="https://github.com/chatty21/instacart-analytics-dashboard" target="_blank" class="proj-view-btn"><i class="fab fa-github"></i> View Repo</a></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-top"><span class="proj-badge">Analytics</span><span class="proj-yr">2024</span></div>
+          <h3>Instacart Analytics Dashboard</h3>
+          <p>End-to-end analytics with RFM analysis, A/B testing simulation, recommender systems & time series forecasting.</p>
+          <div class="proj-tags"><span>RFM</span><span>A/B Testing</span><span>Forecasting</span></div>
+          <a href="https://github.com/chatty21/instacart-analytics-dashboard" target="_blank" class="proj-cta"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+
+      <div class="proj-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="proj-thumb" style="background-image:url('chatbot.png')">
+          <div class="proj-overlay"><a href="https://github.com/chatty21/Chatbot-on-kidney-disease" target="_blank" class="proj-view-btn"><i class="fab fa-github"></i> View Repo</a></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-top"><span class="proj-badge">NLP · Health</span><span class="proj-yr">2023</span></div>
+          <h3>Kidney Disease Chatbot</h3>
+          <p>AI-powered NLP chatbot providing medical insights on kidney disease using intent classification.</p>
+          <div class="proj-tags"><span>NLP</span><span>Chatbot</span><span>Python</span></div>
+          <a href="https://github.com/chatty21/Chatbot-on-kidney-disease" target="_blank" class="proj-cta"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+
+      <div class="proj-card" data-aos="fade-up" data-aos-delay="340">
+        <div class="proj-thumb" style="background-image:url('download.png')">
+          <div class="proj-overlay"><a href="https://github.com/chatty21/Telecom-Churn-prediction" target="_blank" class="proj-view-btn"><i class="fab fa-github"></i> View Repo</a></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-top"><span class="proj-badge">ML · NLP</span><span class="proj-yr">2023</span></div>
+          <h3>Telecom Churn Prediction</h3>
+          <p>Churn prediction using TF-IDF & word embeddings on 50,000+ review texts with ensemble ML methods.</p>
+          <div class="proj-tags"><span>NLP</span><span>TF-IDF</span><span>ML</span></div>
+          <a href="https://github.com/chatty21/Telecom-Churn-prediction" target="_blank" class="proj-cta"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+
+      <div class="proj-card" data-aos="fade-up" data-aos-delay="380">
+        <div class="proj-thumb" style="background-image:url('SOLAR.png')">
+          <div class="proj-overlay"><a href="https://github.com/chatty21/solar-forecasting" target="_blank" class="proj-view-btn"><i class="fab fa-github"></i> View Repo</a></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-top"><span class="proj-badge">Time Series</span><span class="proj-yr">2023</span></div>
+          <h3>Solar Forecasting (ARIMA)</h3>
+          <p>Analyzed & forecasted global solar energy generation using ARIMA. Real vs predicted evaluated with RMSE.</p>
+          <div class="proj-tags"><span>ARIMA</span><span>Time Series</span><span>Python</span></div>
+          <a href="https://github.com/chatty21/solar-forecasting" target="_blank" class="proj-cta"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SKILLS ══ -->
+<section id="skills" class="section skills-section" data-scene="skills">
+  <div class="container">
+    <div class="sec-label" data-aos="fade-right"><span class="sec-num">04</span><span class="sec-txt">Skills</span></div>
+    <h2 class="sec-title" data-aos="fade-up">Tools of the trade.</h2>
+
+    <div class="skill-cats" data-aos="fade-up" data-aos-delay="80">
+      <div class="skill-cat-card">
+        <div class="scc-hdr"><i class="fas fa-terminal"></i><h4>Languages</h4></div>
+        <div class="scc-pills"><span>Python</span><span>SQL</span><span>Java</span><span>C++</span><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+      </div>
+      <div class="skill-cat-card">
+        <div class="scc-hdr"><i class="fas fa-brain"></i><h4>Data & ML</h4></div>
+        <div class="scc-pills"><span>Pandas</span><span>Scikit-learn</span><span>TensorFlow</span><span>Kafka</span><span>Hadoop</span><span>FastAPI</span><span>Flask</span><span>Django</span><span>Neo4j</span></div>
+      </div>
+      <div class="skill-cat-card">
+        <div class="scc-hdr"><i class="fas fa-chart-bar"></i><h4>BI & Visualization</h4></div>
+        <div class="scc-pills"><span>Power BI</span><span>Tableau</span><span>Looker Studio</span><span>Plotly</span><span>Seaborn</span><span>Matplotlib</span></div>
+      </div>
+      <div class="skill-cat-card">
+        <div class="scc-hdr"><i class="fas fa-cloud"></i><h4>Cloud & DevOps</h4></div>
+        <div class="scc-pills"><span>AWS</span><span>Azure</span><span>Google Cloud</span><span>Docker</span><span>Kubernetes</span><span>Git</span></div>
+      </div>
+    </div>
+
+    <div class="skill-icon-grid" id="skills-grid" data-aos="fade-up" data-aos-delay="160"></div>
+  </div>
+</section>
+
+<!-- ══ EDUCATION ══ -->
+<section id="education" class="section edu-section" data-scene="education">
+  <div class="container">
+    <div class="sec-label" data-aos="fade-right"><span class="sec-num">05</span><span class="sec-txt">Education</span></div>
+    <h2 class="sec-title" data-aos="fade-up">Academic foundation.</h2>
+    <div class="edu-grid">
+
+      <div class="edu-card" data-aos="fade-right" data-aos-delay="100">
+        <div class="edu-card-top">
+          <div class="edu-icon-wrap"><i class="fas fa-graduation-cap"></i></div>
+          <div><span class="edu-yr-badge">2023 – 2025</span><span class="edu-status">Current</span></div>
+        </div>
         <h3>Rochester Institute of Technology</h3>
-        <p><strong>MS – Information Technology and Analytics</strong></p>
-        <p><strong>Courses:</strong></p>
-        <ul>
-          <li>Foundation of Data Science</li>
-          <li>Database Design and implementations</li>
-          <li>Non-Relational Data Management</li>
-          <li>Visual Analytics</li>
-          <li>Data Warehousing</li>
-          <li>Foundation of Web Technologies-1</li>
-          <li>Capstone</li>
-        </ul>
+        <p class="edu-deg">MS — Information Technology & Analytics</p>
+        <div class="gpa-row">
+          <span class="gpa-lbl">GPA</span>
+          <div class="gpa-track"><div class="gpa-fill" style="width:90%"></div></div>
+          <span class="gpa-val">3.6 / 4.0</span>
+        </div>
+        <div class="edu-pills">
+          <span>Data Science</span><span>Database Design</span><span>Non-Relational Data</span>
+          <span>Visual Analytics</span><span>Data Warehousing</span><span>Web Technologies</span><span>Capstone</span>
+        </div>
       </div>
-    </div> <!-- end timeline-item 1 -->
 
+      <div class="edu-card" data-aos="fade-left" data-aos-delay="100">
+        <div class="edu-card-top">
+          <div class="edu-icon-wrap"><i class="fas fa-university"></i></div>
+          <div><span class="edu-yr-badge">2018 – 2022</span><span class="edu-status done">Completed</span></div>
+        </div>
+        <h3>Atharva College of Engineering</h3>
+        <p class="edu-deg">BE — Information Technology · Mumbai University</p>
+        <div class="gpa-row">
+          <span class="gpa-lbl">CGPA</span>
+          <div class="gpa-track"><div class="gpa-fill" style="width:81.2%"></div></div>
+          <span class="gpa-val">8.12 / 10</span>
+        </div>
+        <div class="edu-pills" style="margin-top:1.5rem">
+          <span>Data Structures</span><span>Big Data Analytics</span><span>DBMS</span>
+          <span>Cloud Computing</span><span>Operating Systems</span><span>Data Mining & BI</span><span>Software Engineering</span>
+        </div>
+      </div>
 
-    <!-- Timeline Item 2 (Right Side) -->
-    <div class="timeline-item" data-aos="fade-left">
-      <!-- The circle with the icon -->
-      <div class="timeline-icon2">
-        <i class="fas fa-graduation-cap"></i>
-      </div>
-      <!-- The date on the right of the line -->
-      <span class="timeline-year left-date">2018 – 2022</span>
-
-      <!-- Content Box on the right -->
-      <div class="timeline-content right">
-        <h3>Atharva College of Engineering - Mumbai University</h3>
-        <p><strong>BE - Information Technology</strong></p>
-        <p><strong>Courses:</strong></p>
-        <ul>
-          <li>Data Structures and Algorithms</li>
-          <li>Big Data Analytics</li>
-          <li>Database Management System</li>
-          <li>Cloud Computing</li>
-          <li>Operating Systems</li>
-          <li>Data Mining and Business Intelligence</li>
-          <li>Software Engineering with Project Management</li>
-        </ul>
-      </div>
-    </div> <!-- end timeline-item 2 -->
-
-  </div> <!-- end .timeline -->
-</section>
-
-
- <!-- SKILLS SECTION -->
-<section id="skills" class="skills">
-  <div class="container">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <!-- AOS JS is still included if you use it elsewhere -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 800,
-    once: true
-  });
-</script>
-
-      <!-- Programming Languages -->
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" alt="Java Logo">
-        <p>Java</p>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C++ Logo">
-        <p>C++</p>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" alt="Python Logo">
-        <p>Python</p>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" alt="Flask Logo">
-        <p>Flask</p>
-      </div>
-      <div class="skill-item">
-        <img src="https://img.icons8.com/?size=100&id=SruJhzn0nnLl&format=png&color=000000" alt="Looker logo">
-        <p>Looker Studio</p>
-      </div>
-      <div class="skill-item">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNtG3sNJP-TjvG3OL5GP4t9NK-goDIHr8Y0XGHGYeC4UYPo6Pt-7Jp3ZKJXOGEq0a0M6Y&usqp=CAU" alt="Neo4j Logo">
-        <p>Neo4j</p>
-      </div>
-      <!-- Data Analysis Tools -->
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" alt="MySQL Logo">
-        <p>SQL (MySQL)</p>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" alt="Pandas Logo">
-        <p>Pandas</p>
-      </div>
-      <div class="skill-item">
-        <img src="https://www.svgrepo.com/show/354427/tableau.svg" alt="Tableau Logo">
-        <p>Tableau</p>
-      </div>
-      <div class="skill-item">
-        <!-- Placeholder for Power BI -->
-        <img src="https://img.icons8.com/?size=100&id=qYfwpsRXEcpc&format=png&color=000000" alt="Power BI Logo">
-        <p>Power BI</p>
-      </div>
-      
-      <!-- Web Development Technologies -->
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" alt="HTML5 Logo">
-        <p>HTML5</p>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="CSS3 Logo">
-        <p>CSS3</p>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript Logo">
-        <p>JavaScript</p>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain-wordmark.svg" alt="Django Logo">
-        <p>Django</p>
-      </div>
-      
-      <!-- Cloud Platforms -->
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS Logo">
-        <p>AWS</p>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="Azure Logo">
-        <p>Azure</p>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original-wordmark.svg" alt="Google Cloud Logo">
-        <p>Google Cloud</p>
-      </div>
-      
-      <!-- Data Engineering Tools -->
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hadoop/hadoop-original.svg" alt="Apache Hadoop Logo">
-        <p>Apache Hadoop</p>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" alt="Git Logo">
-        <p>Git</p>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" alt="Docker Logo">
-        <p>Docker</p>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain-wordmark.svg" alt="Kubernetes Logo">
-        <p>Kubernetes</p>
-      </div>
     </div>
   </div>
 </section>
 
-<script>
-const skills = [
-  { name: "Java", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" },
-  { name: "C++", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" },
-  { name: "Python", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" },
-  { name: "Flask", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" },
-  { name: "SQL (MySQL)", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" },
-  { name: "Pandas", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" },
-  { name: "Tableau", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tableau/tableau-original.svg" },
-  { name: "Power BI", logo: "https://via.placeholder.com/80?text=PowerBI" },
-  { name: "HTML5", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" },
-  { name: "CSS3", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" },
-  { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },
-  { name: "Django", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain-wordmark.svg" },
-  { name: "AWS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
-  { name: "Azure", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" },
-  { name: "Google Cloud", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original-wordmark.svg" },
-  { name: "Apache Hadoop", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hadoop/hadoop-original.svg" },
-  { name: "Git", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" },
-  { name: "Docker", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" },
-  { name: "Kubernetes", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain-wordmark.svg" }
-];
-
-const skillsGrid = document.getElementById('skills-grid');
-
-skills.forEach((skill, index) => {
-  const skillItem = document.createElement('div');
-  skillItem.className = 'skill-item';
-  // AOS animation on the outer container
-  skillItem.setAttribute('data-aos', 'zoom-in');
-  skillItem.setAttribute('data-aos-delay', index * 100);
-
-  // Create an inner wrapper for drift animation
-  const innerWrapper = document.createElement('div');
-  innerWrapper.className = 'skill-item-inner';
-
-  const img = document.createElement('img');
-  img.src = skill.logo;
-  img.alt = `${skill.name} Logo`;
-
-  const label = document.createElement('p');
-  label.textContent = skill.name;
-
-  innerWrapper.appendChild(img);
-  innerWrapper.appendChild(label);
-  skillItem.appendChild(innerWrapper);
-
-  // Randomize drift animation on inner wrapper
-  const randomDuration = (Math.random() * 3 + 4).toFixed(2);
-  const randomDelay = (Math.random() * 2).toFixed(2);
-  innerWrapper.style.animationDuration = `${randomDuration}s`;
-  innerWrapper.style.animationDelay = `${randomDelay}s`;
-
-  skillsGrid.appendChild(skillItem);
-});
-</script>
-
-
-<!-- CERTIFICATIONS SECTION -->
-<section id="certifications" class="certifications">
+<!-- ══ CERTIFICATIONS ══ -->
+<section id="certifications" class="section certs-section" data-scene="certifications">
   <div class="container">
-    <h2>Certifications</h2>
+    <div class="sec-label" data-aos="fade-right"><span class="sec-num">06</span><span class="sec-txt">Certifications</span></div>
+    <h2 class="sec-title" data-aos="fade-up">Credentials.</h2>
     <div class="cert-grid">
-      
-      <!-- Certification Card 1 -->
-      <div class="cert-card" data-aos="fade-up">
-        <div class="cert-card-content">
-          <img src="https://images.credly.com/size/680x680/images/40bee502-a5b3-4365-90e7-57eed5067594/image.png" alt="Python for Data Science" class="cert-img">
-          <h3>Python for Data Science, AI & Development</h3>
-          <p><strong>Issued by:</strong> IBM</p>
-          <p><strong>Issued on:</strong> April 2023</p>
-        </div>
-        <a href="https://coursera.org/share/de98864bd38252ff3f13fa9d8847966c" class="btn" target="_blank">See Credential</a>
+
+      <div class="cert-card" data-aos="zoom-in">
+        <img src="https://images.credly.com/size/680x680/images/40bee502-a5b3-4365-90e7-57eed5067594/image.png" alt="IBM" class="cert-logo">
+        <h4>Python for Data Science, AI & Development</h4>
+        <p class="cert-meta"><i class="fas fa-award"></i> IBM · Apr 2023</p>
+        <a href="https://coursera.org/share/de98864bd38252ff3f13fa9d8847966c" target="_blank" class="cert-btn">Verify <i class="fas fa-external-link-alt"></i></a>
       </div>
-      
-      <!-- Certification Card 2 -->
-      <div class="cert-card" data-aos="fade-up">
-        <div class="cert-card-content">
-          <!-- Replace with actual image path if available -->
-          <img src="https://coursera-university-assets.s3.amazonaws.com/74/fa9028074941789429dfc1d1b71ddf/gc-logo-360x360.png" alt="Introduction to Cloud Identity Logo" class="cert-img">
-          <h3>Introduction to Cloud Identity</h3>
-          <p><strong>Issued by:</strong> Google Cloud – Minnesota</p>
-          <p><strong>Issued on:</strong> June 2021</p>
-        </div>
-        <a href="https://coursera.org/share/e7a091ea8d205b6aaf48c002b3142c37" class="btn" target="_blank">See Credential</a>
+      <div class="cert-card" data-aos="zoom-in" data-aos-delay="60">
+        <img src="https://coursera-university-assets.s3.amazonaws.com/74/fa9028074941789429dfc1d1b71ddf/gc-logo-360x360.png" alt="GCP" class="cert-logo">
+        <h4>Introduction to Cloud Identity</h4>
+        <p class="cert-meta"><i class="fas fa-award"></i> Google Cloud · Jun 2021</p>
+        <a href="https://coursera.org/share/e7a091ea8d205b6aaf48c002b3142c37" target="_blank" class="cert-btn">Verify <i class="fas fa-external-link-alt"></i></a>
       </div>
-      
-      <div class="cert-card" data-aos="fade-up">
-        <div class="cert-card-content">
-          <!-- Replace 'ibm_logo.png' with your actual image path or a placeholder -->
-          <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/4a/cb36835ae3421187080898a7ecc11d/Google-G_360x360.png?auto=format%2Ccompress&dpr=2&w=80&h=80" alt="IBM Certification Logo" class="cert-img">
-          
-          <h3>Foundations: Data, Data, Everywhere</h3>
-          <p><strong>Issued by:</strong> Google</p>
-          <p><strong>Issued on:</strong> April 2023</p> 
-        </div>
-        <a 
-          href="https://www.coursera.org/account/accomplishments/certificate/E4AB7T5Q9HDH" 
-          class="btn" 
-          target="_blank">
-          See Credential
-        </a>
+      <div class="cert-card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/4a/cb36835ae3421187080898a7ecc11d/Google-G_360x360.png?auto=format%2Ccompress&dpr=2&w=80&h=80" alt="Google" class="cert-logo">
+        <h4>Foundations: Data, Data, Everywhere</h4>
+        <p class="cert-meta"><i class="fas fa-award"></i> Google · Apr 2023</p>
+        <a href="https://www.coursera.org/account/accomplishments/certificate/E4AB7T5Q9HDH" target="_blank" class="cert-btn">Verify <i class="fas fa-external-link-alt"></i></a>
+      </div>
+      <div class="cert-card" data-aos="zoom-in" data-aos-delay="140">
+        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/4a/cb36835ae3421187080898a7ecc11d/Google-G_360x360.png?auto=format%2Ccompress&dpr=2&w=80&h=80" alt="Google IT" class="cert-logo">
+        <h4>Technical Support Fundamentals</h4>
+        <p class="cert-meta"><i class="fas fa-award"></i> Google IT Support · Jun 2021</p>
+        <a href="https://coursera.org/share/3872da60bb531f1abe7e6e8760de6711" target="_blank" class="cert-btn">Verify <i class="fas fa-external-link-alt"></i></a>
+      </div>
+      <div class="cert-card" data-aos="zoom-in" data-aos-delay="180">
+        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/6d/3cb3e06c357d40ef60000fb3d12d72/dukesquare_blue.png?auto=format%2Ccompress&dpr=2&w=80&h=80" alt="Duke" class="cert-logo">
+        <h4>Introduction to Machine Learning</h4>
+        <p class="cert-meta"><i class="fas fa-award"></i> Duke University · May 2021</p>
+        <a href="https://coursera.org/share/5ffaf0c0cf638c0848ac492cf78695fd" target="_blank" class="cert-btn">Verify <i class="fas fa-external-link-alt"></i></a>
+      </div>
+      <div class="cert-card" data-aos="zoom-in" data-aos-delay="220">
+        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png?auto=format%2Ccompress&dpr=2&w=80&h=80" alt="Michigan" class="cert-logo">
+        <h4>Introduction to HTML5</h4>
+        <p class="cert-meta"><i class="fas fa-award"></i> Univ. of Michigan · Jul 2020</p>
+        <a href="https://coursera.org/share/b47f1dec38da6c085fde6975e97670bb" target="_blank" class="cert-btn">Verify <i class="fas fa-external-link-alt"></i></a>
       </div>
 
-      <div class="cert-card" data-aos="fade-up">
-        <div class="cert-card-content">
-          <!-- Replace with actual image path if available -->
-          <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/4a/cb36835ae3421187080898a7ecc11d/Google-G_360x360.png?auto=format%2Ccompress&dpr=2&w=80&h=80" alt="Introduction to Cloud Identity Logo" class="cert-img">
-          <h3>Technical Support Fundamentals</h3>
-          <p><strong>Issued by:</strong> Google IT Support</p>
-          <p><strong>Issued on:</strong> June 2021</p>
-        </div>
-        <a href="https://coursera.org/share/3872da60bb531f1abe7e6e8760de6711" class="btn" target="_blank">See Credential</a>
-      </div>
-
-      <div class="cert-card" data-aos="fade-up">
-        <div class="cert-card-content">
-          <!-- Replace with actual image path if available -->
-          <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/6d/3cb3e06c357d40ef60000fb3d12d72/dukesquare_blue.png?auto=format%2Ccompress&dpr=2&w=80&h=80" alt="Introduction to Cloud Identity Logo" class="cert-img">
-          <h3>Introduction to Machine Learning</h3>
-          <p><strong>Issued by:</strong> Duke University</p>
-          <p><strong>Issued on:</strong> May 2021</p>
-        </div>
-        <a href="https://coursera.org/share/5ffaf0c0cf638c0848ac492cf78695fd" class="btn" target="_blank">See Credential</a>
-      </div>
-
-      <div class="cert-card" data-aos="fade-up">
-        <div class="cert-card-content">
-          <!-- Replace with actual image path if available -->
-          <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png?auto=format%2Ccompress&dpr=2&w=80&h=80" alt="Introduction to Cloud Identity Logo" class="cert-img">
-          <h3>Introduction to HTML5</h3>
-          <p><strong>Issued by:</strong> University of Michigan</p>
-          <p><strong>Issued on:</strong> July 2020</p>
-        </div>
-        <a href="https://coursera.org/share/b47f1dec38da6c085fde6975e97670bb" class="btn" target="_blank">See Credential</a>
-      </div>
-      
-      
     </div>
   </div>
 </section>
 
+<!-- ══ CONTACT ══ -->
+<section id="contact" class="section contact-section" data-scene="contact">
+  <div class="contact-bg-orb contact-orb1"></div>
+  <div class="contact-bg-orb contact-orb2"></div>
+  <div class="container">
+    <div class="sec-label" data-aos="fade-right"><span class="sec-num">07</span><span class="sec-txt">Contact</span></div>
+    <h2 class="sec-title contact-title" data-aos="fade-up">Let's build<br>something great.</h2>
+    <p class="contact-sub" data-aos="fade-up" data-aos-delay="80">Open to Data Engineer & Analyst roles. I reply fast.</p>
 
-  <!-- CONTACT SECTION -->
-<section id="contact" class="contact-section">
-  <div class="contact-container">
-    
-    <!-- Left Side: Big Text, Info, etc. -->
-    <div class="contact-left">
-      <h1 class="big-heading">CONNECT<br> WITH<br> ME.</h1>
-      
-      <!-- Optional additional info -->
-      <div class="contact-info">
-        <p>Chaitanyapatil827@gmail.com</p>
-        <p>Rochester<br>New York, United States</p>
+    <div class="contact-grid">
+      <div class="contact-left" data-aos="fade-right" data-aos-delay="120">
+        <div class="ci-links">
+          <a href="mailto:Chaitanyapatil827@gmail.com" class="ci-row">
+            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+            <div><small>Email</small><span>Chaitanyapatil827@gmail.com</span></div>
+            <i class="fas fa-arrow-right ci-arr"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/chaitanyapatil21/" target="_blank" class="ci-row">
+            <div class="ci-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div><small>LinkedIn</small><span>chaitanyapatil21</span></div>
+            <i class="fas fa-arrow-right ci-arr"></i>
+          </a>
+          <a href="https://github.com/chatty21" target="_blank" class="ci-row">
+            <div class="ci-icon"><i class="fab fa-github"></i></div>
+            <div><small>GitHub</small><span>chatty21</span></div>
+            <i class="fas fa-arrow-right ci-arr"></i>
+          </a>
+          <a href="tel:+15859107221" class="ci-row">
+            <div class="ci-icon"><i class="fas fa-phone"></i></div>
+            <div><small>Phone</small><span>+1 (585) 910-7221</span></div>
+            <i class="fas fa-arrow-right ci-arr"></i>
+          </a>
+        </div>
+        <div class="contact-avail">
+          <span class="live-dot"></span>
+          <p>Currently available for full-time roles & collaborations.<br>Based in <strong>Rochester, New York</strong>.</p>
+        </div>
+      </div>
+
+      <div class="contact-right" data-aos="fade-left" data-aos-delay="120">
+        <form class="contact-form" action="https://formspree.io/f/xdkaygdd" method="POST">
+          <h3 class="form-title">Send a message</h3>
+          <div class="form-row-2">
+            <div class="fg"><label>Name</label><input type="text" name="name" placeholder="Jane Smith" required></div>
+            <div class="fg"><label>Email</label><input type="email" name="_replyto" placeholder="jane@company.com" required></div>
+          </div>
+          <div class="fg"><label>Subject</label><input type="text" name="subject" placeholder="Job opportunity at Acme Corp"></div>
+          <div class="fg"><label>Message</label><textarea name="message" rows="5" placeholder="Tell me about the role or project..." required></textarea></div>
+          <input type="text" name="_gotcha" style="display:none">
+          <button type="submit" class="submit-btn" data-magnetic>Send Message <i class="fas fa-paper-plane"></i></button>
+        </form>
       </div>
     </div>
-    
-     <!-- Right Side: Contact Form -->
-     <div class="contact-right">
-      <form class="contact-form" action="https://formspree.io/f/xdkaygdd" method="POST">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Jane Smith" required>
-        
-        <label for="email">Email</label>
-        <input type="email" id="email" name="_replyto" placeholder="jane@gmail.com" required>
-        
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
-        
-        <!-- Honeypot to reduce spam -->
-        <input type="text" name="_gotcha" style="display:none">
-        
-        <button type="submit" class="submit-btn">Submit</button>
-      </form>
-    </div>
-    
   </div>
 </section>
 
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Chaitanya Patil | All Rights Reserved</p>
-      <div class="footer-social">
-        <a href="https://www.linkedin.com/in/chaitanyapatil21/" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/chatty21" target="_blank">GitHub</a>
-      </div>
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-inner container">
+    <a href="#hero" class="footer-logo"><span class="bracket">&lt;</span>CP<span class="bracket">/&gt;</span></a>
+    <p class="footer-copy">© 2025 Chaitanya Patil · Crafted with curiosity &amp; caffeine ☕</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/chaitanyapatil21/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/chatty21" target="_blank">GitHub</a>
+      <a href="mailto:Chaitanyapatil827@gmail.com">Email</a>
     </div>
-  </footer>
+  </div>
+</footer>
 
-  <!-- Typed.js Initialization -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      new Typed('#typed-text', {
-        strings: [
-          'Data Analyst',
-          'Machine Learning Engineer',
-          'Full Stack Web Developer'
-        ],
-        typeSpeed: 50,
-        backSpeed: 25,
-        backDelay: 1000,
-        startDelay: 500,
-        loop: true
-      });
-    });
-  </script>
+<div class="project-spotlight" id="projectSpotlight" aria-hidden="true">
+  <div class="project-spotlight-media" id="projectSpotlightMedia"></div>
+  <div class="project-spotlight-body">
+    <span class="project-spotlight-label">Project Preview</span>
+    <h3 id="projectSpotlightTitle">Hover a project</h3>
+    <p id="projectSpotlightText">Interactive preview follows your focus.</p>
+  </div>
+</div>
 
-<!--Education-->
+<button class="back-top" id="backTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+<!-- ══ SCRIPTS ══ -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 800, // animation duration in ms
-      once: true,    // animate only once
-    });
-  </script>
-  
- <!-- Dynamic Skills Script -->
-<script src="skills.js"></script>
-
-
-
+<script src="script.js"></script>
 </body>
 </html>
