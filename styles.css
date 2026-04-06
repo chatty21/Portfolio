@@ -485,19 +485,6 @@ a{color:inherit;text-decoration:none}
 
 /* ── PROJECTS ── */
 .projects-section{background:var(--bg2)}
-.projects-shell{display:grid;grid-template-columns:320px minmax(0,1fr);gap:1.5rem;align-items:start}
-.projects-story{
-  position:sticky;
-  top:6.5rem;
-  padding:1.2rem;
-  border-radius:28px;
-  background:
-    radial-gradient(circle at top left, rgba(22,93,255,.12), transparent 36%),
-    linear-gradient(180deg, rgba(255,255,255,.78), rgba(255,255,255,.46));
-  border:1px solid rgba(23,22,28,.08);
-  box-shadow:0 22px 60px rgba(23,22,28,.12);
-  backdrop-filter:blur(14px);
-}
 .projects-intro{
   max-width:60ch;
   margin:.9rem 0 2rem;
@@ -506,7 +493,7 @@ a{color:inherit;text-decoration:none}
   line-height:1.8;
 }
 .projects-shell{display:block}
-.proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.proj-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem;align-items:stretch}
 .proj-card{
   background:linear-gradient(180deg, rgba(255,255,255,.76), rgba(255,255,255,.62));
   border:1px solid rgba(36,40,53,.08);
@@ -544,21 +531,6 @@ a{color:inherit;text-decoration:none}
 .proj-card:hover{border-color:rgba(22,93,255,.18);box-shadow:0 24px 65px rgba(64,54,35,.12);transform:translateY(-4px)}
 .proj-card:hover::after{transform:rotate(18deg) translateX(270%)}
 .proj-thumb{background-size:cover;background-position:center;background-repeat:no-repeat;background-color:var(--bg3);min-height:190px;position:relative;overflow:hidden}
-.chicago-intel-thumb{
-  background:
-    linear-gradient(180deg, rgba(10,16,28,.08), rgba(10,16,28,.16)),
-    url('Screenshot 2026-04-06 at 4.48.33 AM.png');
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
-}
-.chicago-intel-thumb::before{
-  content:'';
-  position:absolute;
-  inset:0;
-  background:
-    linear-gradient(180deg, rgba(8,12,22,.02), rgba(8,12,22,.22));
-}
 .proj-overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(23,22,28,.04), rgba(23,22,28,.22));display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .25s;backdrop-filter:blur(2px)}
 .proj-card:hover .proj-overlay{opacity:1}
 .proj-view-btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--accent);color:#fff;padding:.6rem 1.2rem;border-radius:var(--r);font-size:.82rem;font-weight:600;transition:background .2s;cursor:none}
@@ -680,7 +652,6 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:1.75rem 0
 
 /* ── RESPONSIVE ── */
 @media(max-width:1100px){
-  .projects-shell{grid-template-columns:1fr}
   .proj-grid{grid-template-columns:repeat(2,1fr)}
   .skill-cats{grid-template-columns:repeat(2,1fr)}
   .hero-grid{grid-template-columns:1fr}
